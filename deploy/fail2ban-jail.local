@@ -1,0 +1,9 @@
+# /etc/fail2ban/jail.local
+[torneogg-login]
+enabled  = true
+filter   = torneogg-login
+logpath  = /var/log/apache2/access.log
+port     = http,https
+maxretry = 5
+findtime = 300
+bantime  = 600
